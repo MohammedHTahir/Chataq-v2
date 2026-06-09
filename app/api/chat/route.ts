@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient, ChatDetail } from 'v0-sdk'
+import { createClient, ChatDetail } from 'chataq-sdk'
 import { auth } from '@/app/(auth)/auth'
 import {
   createChatOwnership,

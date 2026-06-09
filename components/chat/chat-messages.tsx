@@ -7,7 +7,7 @@ import {
 import { Loader } from '@/components/ai-elements/loader'
 import { MessageRenderer } from '@/components/message-renderer'
 import { sharedComponents } from '@/components/shared-components'
-import { StreamingMessage } from '@v0-sdk/react'
+import { StreamingMessage } from 'chataq-react'
 
 interface ChatMessage {
   type: 'user' | 'assistant'

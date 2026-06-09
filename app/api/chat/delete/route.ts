@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from 'v0-sdk'
+import { createClient } from 'chataq-sdk'
 
 // Create v0 client with custom baseUrl if V0_API_URL is set
 const v0 = createClient(
@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Delete the chat using v0 SDK
+    // Delete the chat using Chataq SDK
     const result = await v0.chats.delete({
       chatId,
     })

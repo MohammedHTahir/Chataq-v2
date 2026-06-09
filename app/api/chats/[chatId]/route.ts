@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from 'v0-sdk'
+import { createClient } from 'chataq-sdk'
 import { auth } from '@/app/(auth)/auth'
 import { getChatOwnership } from '@/lib/db/queries'
 
@@ -41,7 +41,7 @@ export async function GET(
       console.log('Anonymous access to chat:', chatId)
     }
 
-    // Fetch chat details using v0 SDK
+    // Fetch chat details using Chataq SDK
     const chatDetails = await v0.chats.getById({ chatId })
 
     console.log('Chat details fetched:', chatDetails)

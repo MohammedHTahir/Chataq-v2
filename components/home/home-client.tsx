@@ -661,10 +661,10 @@ export function HomeClient() {
             <p>
               Powered by{' '}
               <Link
-                href="https://v0-sdk.dev"
+                href="https://github.com/MohammedHTahir/Chataq-v2"
                 className="text-foreground hover:underline"
               >
-                v0 SDK
+                Chataq SDK
               </Link>
             </p>
           </div>

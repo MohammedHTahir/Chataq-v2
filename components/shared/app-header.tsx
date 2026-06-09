@@ -104,12 +104,12 @@ export function AppHeader({ className = '' }: AppHeaderProps) {
               asChild
             >
               <Link
-                href="https://github.com/vercel/v0-sdk"
+                href="https://github.com/MohammedHTahir/Chataq-v2"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <GitHubIcon size={16} />
-                vercel/v0-sdk
+                MohammedHTahir/Chataq-v2
               </Link>
             </Button>
 
@@ -151,7 +151,7 @@ export function AppHeader({ className = '' }: AppHeaderProps) {
                 rel="noopener noreferrer"
                 className="underline text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
               >
-                v0 clone
+                Chataq-v2
               </a>{' '}
               where users can enter text prompts and generate React components
               and applications using AI.
@@ -168,12 +168,12 @@ export function AppHeader({ className = '' }: AppHeaderProps) {
               </a>{' '}
               and the{' '}
               <a
-                href="https://v0-sdk.dev"
+                href="https://github.com/MohammedHTahir/Chataq-v2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
               >
-                v0 SDK
+                Chataq SDK
               </a>{' '}
               to provide a full-featured interface with authentication, database
               integration, and real-time streaming responses.

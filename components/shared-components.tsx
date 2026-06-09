@@ -6,7 +6,7 @@ import {
   ThinkingSectionProps,
   TaskSectionProps,
   CodeProjectPartProps,
-} from '@v0-sdk/react'
+} from 'chataq-react'
 import {
   Reasoning,
   ReasoningTrigger,
@@ -20,7 +20,7 @@ import {
   TaskItemFile,
 } from '@/components/ai-elements/task'
 
-// Wrapper component to adapt AI Elements Reasoning to @v0-sdk/react ThinkingSection
+// Wrapper component to adapt AI Elements Reasoning to chataq-react ThinkingSection
 export const ThinkingSectionWrapper = ({
   title,
   duration,
@@ -52,7 +52,7 @@ export const ThinkingSectionWrapper = ({
   )
 }
 
-// Wrapper component to adapt AI Elements Task to @v0-sdk/react TaskSection
+// Wrapper component to adapt AI Elements Task to chataq-react TaskSection
 export const TaskSectionWrapper = ({
   title,
   type,
@@ -333,7 +333,7 @@ export const TaskSectionWrapper = ({
   )
 }
 
-// Wrapper component to adapt AI Elements styling to @v0-sdk/react CodeProjectPart
+// Wrapper component to adapt AI Elements styling to chataq-react CodeProjectPart
 export const CodeProjectPartWrapper = ({
   title,
   filename,
@@ -530,7 +530,7 @@ export const sharedComponents = {
   CodeBlock,
   MathPart,
 
-  // Styled HTML elements for the v0 clone theme
+  // Styled HTML elements for the Chataq-v2 theme
   p: {
     className: 'mb-4 text-gray-700 dark:text-gray-200 leading-relaxed',
   },

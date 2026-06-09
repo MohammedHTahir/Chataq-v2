@@ -1,5 +1,5 @@
 import React from 'react'
-import { Message, MessageBinaryFormat } from '@v0-sdk/react'
+import { Message, MessageBinaryFormat } from 'chataq-react'
 import { sharedComponents } from './shared-components'
 
 // Function to preprocess message content and remove V0_FILE markers and shell placeholders

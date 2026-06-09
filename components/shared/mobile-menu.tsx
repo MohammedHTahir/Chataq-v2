@@ -154,7 +154,7 @@ export function MobileMenu({ onInfoDialogOpen }: MobileMenuProps) {
                     asChild
                   >
                     <Link
-                      href="https://github.com/vercel/v0-sdk"
+                      href="https://github.com/MohammedHTahir/Chataq-v2"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={closeMenu}
@@ -164,7 +164,7 @@ export function MobileMenu({ onInfoDialogOpen }: MobileMenuProps) {
                         <div className="flex-1">
                           <div className="font-medium">GitHub</div>
                           <div className="text-sm text-muted-foreground">
-                            vercel/v0-sdk
+                            MohammedHTahir/Chataq-v2
                           </div>
                         </div>
                       </div>
@@ -187,7 +187,7 @@ export function MobileMenu({ onInfoDialogOpen }: MobileMenuProps) {
                         <div className="flex-1">
                           <div className="font-medium">Deploy with Vercel</div>
                           <div className="text-sm text-muted-foreground">
-                            Get your own v0 clone
+                            Get your own Chataq-v2
                           </div>
                         </div>
                       </div>

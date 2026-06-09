@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'v0 Clone',
   description:
-    'A clone of v0.dev built with the v0 SDK - Generate and preview React components with AI',
+    'Chataq-v2 - AI-powered UI generation. Describe any interface and watch it get built in real time',
 }
 
 export default function RootLayout({

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from 'v0-sdk'
+import { createClient } from 'chataq-sdk'
 
 // Create v0 client with custom baseUrl if V0_API_URL is set
 const v0 = createClient(
@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Fork the chat using v0 SDK
+    // Fork the chat using Chataq SDK
     const forkedChat = await v0.chats.fork({
       chatId,
       privacy: 'private', // Default to private
