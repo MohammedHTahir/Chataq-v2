@@ -1,6 +1,6 @@
 # Chataq-v2
 
-A full-featured AI-powered UI generation app built with Next.js, the v0 SDK, and AI Elements. Chataq-v2 lets you describe any interface in plain language and watch it get built in real time — with authentication, chat history, and multi-user support out of the box.
+A full-featured AI-powered UI generation app built with Next.js and React. Chataq-v2 lets you describe any interface in plain language and watch it get built in real time — with authentication, chat history, and multi-user support out of the box.
 
 <p align="center">
     <img src="./screenshot.png" alt="Chataq-v2 Screenshot" width="800" />
@@ -14,14 +14,7 @@ A full-featured AI-powered UI generation app built with Next.js, the v0 SDK, and
 - **Streaming Responses** — Toggle streaming mode for real-time token-by-token output
 - **Conversation History** — Full chat history maintained throughout each session
 - **Prompt Suggestions** — Built-in starter prompts to help you get going quickly
-- **Full Task Support** — Handles all v0 Platform API task types:
-  - Thinking & reasoning (`task-thinking-v1`)
-  - Web search (`task-search-web-v1`)
-  - Repo search (`task-search-repo-v1`)
-  - Code diagnostics (`task-diagnostics-v1`)
-  - File reading (`task-read-file-v1`)
-  - Code generation (`task-coding-v1`)
-  - Design inspiration (`task-generate-design-inspiration-v1`)
+- **Full Task Support** — Handles all task types including thinking, web search, repo search, diagnostics, file reading, code generation, and design inspiration
 
 ### Auth & Multi-user
 - **Anonymous Access** — Start building immediately, no sign-up required (3 generations/day)
@@ -34,7 +27,6 @@ A full-featured AI-powered UI generation app built with Next.js, the v0 SDK, and
 ## Tech Stack
 
 - **Framework** — Next.js 16 (App Router, Turbopack)
-- **AI** — v0 SDK + AI Elements (`@v0-sdk/react`)
 - **Auth** — NextAuth.js v5
 - **Database** — PostgreSQL via Drizzle ORM
 - **Styling** — Tailwind CSS v4
@@ -45,8 +37,8 @@ A full-featured AI-powered UI generation app built with Next.js, the v0 SDK, and
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Mohammedhtahir/chataq-v2.git
-cd chataq-v2
+git clone https://github.com/MohammedHTahir/Chataq-v2.git
+cd Chataq-v2
 ```
 
 ### 2. Install dependencies
@@ -66,8 +58,8 @@ AUTH_SECRET=your-auth-secret-here
 # PostgreSQL connection string
 POSTGRES_URL=postgresql://user:password@localhost:5432/chataq
 
-# Get your key from https://v0.dev/chat/settings/keys
-V0_API_KEY=your_v0_api_key_here
+# Your AI API key
+AI_API_KEY=your_api_key_here
 ```
 
 ### 4. Set up the database
@@ -99,7 +91,7 @@ The fastest way to deploy Chataq-v2 is with Vercel + Neon Postgres:
 
 1. Push this repo to GitHub
 2. Import it in [vercel.com/new](https://vercel.com/new)
-3. Add your environment variables (`AUTH_SECRET`, `POSTGRES_URL`, `V0_API_KEY`)
+3. Add your environment variables (`AUTH_SECRET`, `POSTGRES_URL`, `AI_API_KEY`)
 4. Deploy
 
 ## Project Structure
@@ -113,7 +105,7 @@ chataq-v2/
 │   ├── layout.tsx
 │   └── page.tsx         # Main UI
 ├── components/
-│   ├── ai-elements/     # AI Elements UI components
+│   ├── ai-elements/     # AI UI components
 │   ├── chat/            # Chat interface components
 │   ├── home/            # Homepage components
 │   └── shared/          # Shared components (header, etc.)
